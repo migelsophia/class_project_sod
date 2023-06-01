@@ -1,0 +1,74 @@
+*{
+	margin: 0px;
+}
+.head{
+	color: white;
+	background-color: black;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+.vote{
+	float: left;
+	width: 300px;
+	background-color:black;
+	color:white;
+	font-size: 23px;
+	border-right: 5px solid black;
+	font-weight: bolder;
+}
+.vote hr{
+	height: 5px;
+	background-color:white;
+}
+body{
+	background-color: grey;
+}
+.voted{
+	background-color:lightgray;
+	margin-inline:350px;
+	width: 730px;
+	height: 541px
+}
+.voted .fst{
+	width: 100px;
+	height: 100px;
+}
+.voted img{
+	width: 200px;
+	height: 200px;
+}
+.imge{
+	display: flex;
+}
+.loggin{
+	width: 450px;
+	height: 220px;
+	font-size: 16px;
+	font-weight: bolder;
+	margin-top:15%;
+	background-color:whitesmoke ; 
+	border-radius: 20px;
+	text-transform: uppercase;
+}
+.loggin input{
+	height: 50px;
+	font-size: 20px;
+	width: 350px;
+	background-color: black;
+	color: white;
+
+}
+.loggin button{
+	height: 50px;
+		background-color: black;
+	color: white;
+	font-size: 20px;
+	width: 100px
+}
+button{
+	height: 50px;
+		background-color: white;
+	color: black;
+	font-size: 20px;
+	width: 100px
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="ben.css">
+</head>
+<body>
+<div class="head">
+	<H1>E-election system</H1>
+</div><br>
+<div>
+<div class="vote">
+	<form action="" onsubmit="vote()" name="form">
+	<center>
+	<h1> <u><b>VOTING FORM</b></u></h1>
+	<h5><U>CANDIDAT FOR HEAD BOY</U></h5>
+	<select name="HB">
+		<option></option>
+		<option>NYIRIBIHEBYOSE original[L3sod]</option>
+		<option>MANZI honore[L3maso]</option>
+		<option>MAKANYAGA manzi[L3f&b]</option>
+		<option>HAKIZIMANA yusuph</option>
+	</select><br><br>
+	<h5><U>CANDIDAT FOR HEAD GIRL</U></h5>
+	<select name="HG">
+		<option></option>
+		<option>NIYIBIGENA jeanne[L3sod]</option>
+		<option>shema karori[L3maso]</option>
+		<option>MANIZABAYO maria[L3f&b]</option>
+		<option>HAKIZIMANA angelic</option>
+	</select><br><br>
+	<h5><U>CANDIDAT FOR VISE-HEAD BOY</U></h5>
+	<select name="VHB">
+		<option></option>
+		<option>JEAN ClOUDE[L3acc]</option>
+		<option>ishimwe carlos[l3tor] </option>
+		<option>kayitare valate[l4cue]</option>
+		<option>gahiga john[l3buc]</option>
+	</select><br><br>
+	<h5><U>CANDIDAT FOR VISE-HEAD GIRL</U></h5>
+	<select name="VHG">
+		<option></option>
+		<option>mugisha clouden[L3acc]</option>
+		<option>ishimwe sophia[l3tor] </option>
+		<option>kayijugaza valantine[l4cue]</option>
+		<option>gaheza jean marie viane[l3buc]</option>
+	</select><br><br></center>
+	<hr>
+	<h2><u>voter</u></h2>
+	<h5>NAME:</h5><h5></h5>
+	<h5>INDEX NUMBER:</h5><h5></h5>
+	<center>
+	<button>submit</button>
+	</center>
+	</form>
+</div>
+<div class="voted">
+	<div class="imge">
+			<div style="width: 200px;background-color:darkred;margin-left:40px;background-image: url('mmm.png');background-size: 200px">
+			<span><center style="color: white;margin-top: 100px;font-weight: bolder;" >HEAD GIRL</center></span>
+		</div><br>
+			<div style="width: 200px;background-color:darkred;margin-left:40px;background-image: url('mmm.png');background-size: 200px">
+			<span><center style="color: white;margin-top: 100px;font-weight: bo" >HEAD BOY</center></span>
+		</div>
+		<div style="width: 200px;background-color:darkred;margin-left:40px;background-image: url('mmm.png');background-size: 200px">
+			<span><center style="color: white;margin-top: 100px;font-weight: bo" >HEAD BOY</center></span>
+		</div>
+		
+	</div>
+</div>
+<script>
+	function vote(){
+		if(document.form.HB.value==""){
+			alert("please enter candidate name for head BOY");
+			document.form.focus();
+			return false;
+		}
+		if(document.form.HG.value==""){
+			alert("please enter candidate name for head GIRL");
+			document.form.focus();
+			return false;
+		}
+
+		if(document.form.VHB.value==""){
+			alert("please enter candidate name for VISE-head GIRL");
+			document.form.focus();
+			return false;
+		}
+
+		if(document.form.VHG.value==""){
+			alert("please enter candidate name for VISE-head GIRL");
+			document.form.focus();
+			return false;
+		}
+		return true;
+	}
+	
+</script>
+</body>
+</html>

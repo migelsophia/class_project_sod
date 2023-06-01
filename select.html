@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>selecting system</title>
+	<link rel="stylesheet" type="text/css" href="select.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+	<style>
+		.submit{
+			position: fixed;
+			left: 577px;
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="topdiv"><h2 style="margin-left: 42px;">E-selections</h2></div>	
+	<div>
+	<div class="container" id="imgBox">
+		<label for="file">
+	<img src="up.jpg" class="upload-icon">
+	<input type="file" accept="image/*" name="image" id="file" style="display: none" onchange="loadFile(event)">
+</label>      
+		<input type="text" name="candidate" id="candidatename" placeholder="Candidate name A">	
+
+	</div>
+	<div class="voting">
+	<button id="likebtn">
+	<i class="fa fa-thumbs-up"></i>
+    </button>
+    <input type="number" id="input1" value="0" name="">
+</div>
+</div>
+
+  
+
+  <div class="div1" align="right">
+  	<div class="container1" id="imgBox1">
+  		<label class="file1">
+  			<img src="up1.jpg" class="upload-icon1">
+  			<input type="file" accept="image/*" name="image1" id="file1" style="display: none;" onchange="loadFile1(event)">
+  		</label>
+  		<input type="text" name="candidate" id="candidatename2" style="margin-top: 1px;" placeholder="Candidate name B">
+  	</div>
+  	<div class="voting1">
+	<button id="likebtn1">
+	<i class="fa fa-thumbs-up"></i>
+    </button>
+    <input type="number" id="input2" value="0" name="">
+</div>
+  </div>
+  <div class="submit">
+  	<input type="submit" name="" onclick="decide()" id="submit">
+  </div>
+
+	<script>
+		var imgBox = document.getElementById("imgBox");
+		 var loadFile = function(event){
+		 	imgBox.style.backgroundImage= "url(" +URL.createObjectURL(event.target.files[0])+ ")"; 
+		 }
+	</script>
+	<script>
+		
+		var imgBox1 = document.getElementById("imgBox1");
+		var loadFile1 = function(event){
+		 	imgBox1.style.backgroundImage= "url(" +URL.createObjectURL(event.target.files[0])+ ")"; 
+		 }
+	</script>
+
+	
+
+<script>
+	// script for like button 1 one:
+	let likebtn1 = document.querySelector('#likebtn1');
+	let input2 = document.querySelector('#input2');
+	likebtn1.addEventListener('click',()=>{
+		input2.value = parseInt(input2.value) + 1;
+
+	})
+</script>
+<script>
+	// script for like button 2 two:
+	let likebtn = document.querySelector('#likebtn');
+	let input1 = document.querySelector('#input1');
+	likebtn.addEventListener('click',()=>{
+		input1.value = parseInt(input1.value) + 1;
+
+	})
+
+  
+</script>
+
+</body>
+</html>
+</body>
+</html>
